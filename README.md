@@ -1,2 +1,2 @@
 # wordpress
-this repo is for https://sqlpsscript.wordpress.com/
+this repo is for blog https://sqlpsscript.wordpress.com/
