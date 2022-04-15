@@ -8,6 +8,9 @@ workflow Start-workflowExample {
         [Parameter(Mandatory = $true)][Array]$Servers
     )
     $array = @()
+    $Password= "testp"
+    $secpasswd = ConvertTo-SecureString $Password -AsPlainText -Force
+    $cred = New-Object System.Management.Automation.PSCredential ("Domain\testP", $secpasswd)
 
     foreach -parallel -ThrottleLimit 200  ($server in $servers) {
       
